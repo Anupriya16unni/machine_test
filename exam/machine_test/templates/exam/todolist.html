@@ -111,14 +111,14 @@
         </ul>
         
         <script>
-        var myNodelist = document.getElementsByTagName("LI");
+        var n = document.getElementsByTagName("LI");
         var i;
-        for (i = 0; i < myNodelist.length; i++) {
+        for (i = 0; i < n.length; i++) {
           var span = document.createElement("SPAN");
           var txt = document.createTextNode("\u00D7");
           span.className = "close";
           span.appendChild(txt);
-          myNodelist[i].appendChild(span);
+          n[i].appendChild(span);
         }
         var close = document.getElementsByClassName("close");
         var i;
